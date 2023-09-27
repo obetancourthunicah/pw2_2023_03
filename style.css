@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --primary-background:#333;
+    --primary-color:#FFF;
+    --light-primary-background:#999;
+    --light-primary-color: #333;
+}
+body {
+    margin:0px;
+    padding:0px;
+}
+body.dark{
+    --primary-background:#FFF;
+    --primary-color:#000;
+    --light-primary-background:#333;
+    --light-primary-color: #999;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-background);
+    color: var(--primary-color);
+    padding:0px;
+    margin:0px;
+}
+
+header h1 {
+    margin:0px;
+    padding: 0.5rem 1rem;
+}
+
+header nav{
+    margin-right: 1rem;
+}
+header nav ul{
+    padding:0px;
+    margin:0px;
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li a{
+    display:inline-block;
+    padding: 0.5rem 1rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 1s ease, background-color 0.5s ease;
+}
+
+header nav ul li a:hover{
+    background-color: var(--primary-color);
+    color: var(--primary-background);
+}
+
+.container {
+    display:flex;
+}
+
+main {
+    flex: 0 0 70%;
+    order: 2;
+    padding: 0.5rem 1rem;
+}
+aside {
+    flex: 0 0 30%;
+    padding: 0.5rem 1rem;
+    order: 1;
+}
+
+table.zebra{
+    width:100%;
+    margin:1rem 0px;
+}
+table.zebra thead tr, table.zebra tfoot tr{
+    background-color: var(--primary-background);
+    color: var(--primary-color);
+}
+table.zebra td, table.zebra th {
+    padding:0.5rem 0.75rem;
+}
+table.zebra tbody tr:nth-child(even){
+    background-color: var(--light-primary-background);
+    color:var(--light-primary-color);
+}
+
+
+form {
+    box-shadow: 3px 3px 6px #000;
+    padding: 1rem;
+}
+
+form div {
+    padding-top: 0.25rem;
+    padding-bottom: 0.5rem;
+}
+
+
+input, textarea, select{
+    box-sizing: border-box;
+    border-radius: 7px;
+    padding:0.5rem 1rem;
+    width:100%;
+}
+input:focus{
+    border-color:coral;
+    outline-color: coral;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+
+}
+
+form div.radio-group label {
+    display: inline;
+}
+form div.radio-group input {
+    width:auto;
+}
+
+fieldset{
+    border:none;
+    box-shadow: 3px 3px 6px #000;
+    margin-top:0.5rem;
+    margin-bottom: 0.5rem;;
+}
+
+input[type="submit"], button{
+    box-sizing: border-box;
+    border-radius: 13px;
+    padding:0.75rem 1rem;
+    background-color: #999;
+    outline: none;
+    width:100%;
+    margin:0.5rem;
+}
+
+form div.action-group{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+}
+
+img{
+    border-radius: 50%;
+    box-shadow: 4px 4px 8px #000;
+    animation: roundoround 4s infinite;
+}
+
+@keyframes roundoround {
+    0% { transform: rotate(0deg);}
+    50% { transform: rotate(180deg);}
+    100% { transform: rotate(360deg);}
+}

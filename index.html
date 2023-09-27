@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Repaso de HTML</title>
+    <style>
+        main h1 {
+            padding: 1rem;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+        //Validar el Formulario
+        document.addEventListener("DOMContentLoaded", function(){
+            var formToVerify = document.getElementsByTagName('form')[0];
+
+        });
+    </script>
+    <script src="script.js"></script>
+    <script src="form.js"></script>
+</head>
+
+<body class="">
+    <header>
+        <h1>Brand Name</h1>
+        <nav>
+            <ul>
+                <li><a href="#1">Menu 1</a></li>
+                <li><a href="#2">Menu 2</a></li>
+                <li><a href="#3">Menu 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container">
+        <main>
+            <h1 id="inicio" style="background-color:#DDD">Heading 1</h1>
+            <h2>Capitulo</h2>
+
+            <table class="zebra">
+                <thead>
+                    <tr>
+                        <th>Titulo 1</th>
+                        <th>Titulo 2</th>
+                        <th>Titulo 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="" class="link">0</a></td>
+                        <td><a href="" class="link">1</a></td>
+                        <td><a href="" class="link">2</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="" class="link">a</a></td>
+                        <td><a href="" class="link">b</a></td>
+                        <td><a href="" class="link">c</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="" class="link">d</a></td>
+                        <td><a href="" class="link">e</a></td>
+                        <td><a href="" class="link">f</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="" class="link">g</a></td>
+                        <td><a href="" class="link">h</a></td>
+                        <td><a href="" class="link">i</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="../estructura.html" class="link">j</a></td>
+                        <td><a href="https://www.google.com" class="link">k</a></td>
+                        <td><a href="#inicio" class="link">l</a></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Footer</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <img src="https://placehold.co/200x200">
+            <picture>
+                <source media="(max-width: 300px)" srcset="https://placehold.co/300x300">
+                <source media="(max-width: 720px)" srcset="https://placehold.co/400x400">
+                <img src="https://placehold.co/25x25">
+            </picture>
+            <video>
+                <source srcset="urlany" type="mp4">
+                <source srcset="oggvideo" type="vorbis">
+            </video>
+            <audio>
+                ....
+            </audio>
+
+            <form action="index.html" method="GET">
+                <div>
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name" value="" placeholder="Nombre" />
+                </div>
+                <div>
+                    <label for="edad">Edad</label>
+                    <input type="number" name="edad" id="edad" value="21">
+                </div>
+                <fieldset>
+                    <div>
+                        <label>Tema</label>
+                        <div class="radio-group">
+                            <label for="tema_light">Tema Light</label>
+                            <input type="radio" name="tema" id="tema_light" value="LIGHT" />
+                            &nbsp;
+                            <label for="tema_dark">Tema Oscuro</label>
+                            <input type="radio" name="tema" id="tema_dark" value="DARK" checked />
+                        </div>
+                    </div>
+                    <div>
+                        <label for="payment">Forma de Pago</label>
+                        <select name="payment" id="payment">
+                            <optgroup>
+                                Planes Economicos
+                                <option value="PLN1">Plan Economico</option>
+                                <option value="PLN2">Plan Economico Plus</option>
+                            </optgroup>
+                            <optgroup>
+                                <caption>Planes Elite</caption>
+                                <option value="PLN3" selected>Plan Deluxe</option>
+                                <option value="PLN4">Plan Diamond</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="longtext">Texto Largo</label>
+                        <textarea name="longtext" id="longtext" placeholder="Texto largo" cols="30"
+                            rows="10"></textarea>
+                    </div>
+                </fieldset>
+                <div class="action-group">
+                    <input type="submit" name="btnIEnviar" value="Enviar" />
+                    <button type="submit" name="btnBEnviar">Enviar 2</button>
+                </div>
+            </form>
+        </main>
+        <aside>
+            <h2>Un Grave Error</h2>
+            <p>Lorem ipsum dalad akdfklk kadflkjadf.</p>
+            <ol>
+                <li>Opcion 1</li>
+                <li>Opcion 2</li>
+            </ol>
+            <ul>
+                <li>Enumerado 1</li>
+                <li>Enumerado 2</li>
+                <li>Enumerado 3</li>
+            </ul>
+        </aside>
+    </section>
+</body>
+
+</html>
