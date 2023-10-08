@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materialize CSS Demo</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="blue lighten-1" role="navigation">
+            <div class="nav-wrapper container">
+                <a id="logo-container" class="brand-logo" href="">PW2</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#">Opcion 1</a></li>
+                </ul>
+                <ul id="nav-mobile" class="sidenav">
+                    <li><a href="#">Menu</a></li>
+                </ul>
+                <a href="#" data-target="nav-mobile" class="sidenav-trigger">
+                    <i class="material-icons">menu</i>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="section no-padding blue">
+            <div class="container">
+                <br><br>
+                <h1 class="header center orange-text">Materialize Demo hero Panel</h1>
+                <br><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae corrupti maiores vel harum quisquam
+                    modi
+                    distinctio, autem officiis eaque voluptates suscipit provident, impedit illum dolorum aut natus
+                    neque,
+                    ducimus quidem.</p>
+                <br><br>
+                <div class="center">
+                    <a class="btn-large" href>Call to Action</a>
+                </div>
+                <br><br>
+            </div>
+        </section>
+        <section class="container">
+            <div class="row center">
+                <br>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://placehold.co/300X220/black/white?text=I" alt="prod 1" class="" />
+                            <span class="card-title">Product 1</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias tempore sequi veniam
+                                nobis. Iure esse minima autem. Vitae consequatur sint maxime corrupti veritatis atque
+                                consequuntur quia, aliquid explicabo natus eos.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://placehold.co/300X220/black/white?text=I" alt="prod 1" class="" />
+                            <span class="card-title">Product 2</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias tempore sequi veniam
+                                nobis. Iure esse minima autem. Vitae consequatur sint maxime corrupti veritatis atque
+                                consequuntur quia, aliquid explicabo natus eos.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://placehold.co/300X220/black/white?text=I" alt="prod 1" class="" />
+                            <span class="card-title">Product 3</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias tempore sequi veniam
+                                nobis. Iure esse minima autem. Vitae consequatur sint maxime corrupti veritatis atque
+                                consequuntur quia, aliquid explicabo natus eos.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer
+                        content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2023 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const sidenavs = document.querySelectorAll(".sidenav");
+            const instances = M.Sidenav.init(sidenavs, {});
+        });
+    </script>
+</body>
+
+</html>
